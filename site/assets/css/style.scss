@@ -1,0 +1,340 @@
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-Medium.ttf') format('truetype');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-Bold.ttf') format('truetype');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Neue Machina';
+    src: url('../fonts/NeueMachina-Bold.ttf') format('truetype');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Neue Machina';
+    src: url('../fonts/NeueMachina-Ultrabold.ttf') format('truetype');
+    font-weight: 800;
+}
+
+$white-color: #FFFFFF;
+$white-color-header: #F2F2F2;
+$black-color: #000;
+$pink-color: #F0D9FF;
+$lite-pink-color: #F9EFFF;
+$violet-color: #9E00FF;
+$lite-violet-color: #E9C4FF;
+$red-color: #FF004C;
+
+%transition-hovers {
+    transition: 0.15s ease;
+    border-radius: 1em;
+    background-color: $violet-color;
+    cursor: pointer;
+}
+
+%flex-spb {
+    display: flex;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+    box-sizing: border-box;
+    font-family: 'Raleway';
+}
+
+body {
+    margin: auto;
+    background-color: $lite-pink-color;
+}
+
+header {
+    @extend %flex-spb;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    border-radius: 0px 0px 32px 32px;
+    border-bottom: 1px solid #F2F2F2;
+    background-color: $white-color;
+    height: 64px;
+    padding: 10px 48px;
+
+    h1 {
+        font: 700 36px Neue Machina;
+        line-height: normal;
+    }
+
+    nav {
+        @extend %flex-spb;
+        gap: 32px;
+
+        p {
+            color: $black-color;
+            font: 500 20px Raleway;
+            line-height: normal;
+        }
+
+        p:hover {
+            @extend %transition-hovers;
+            padding: 12px 32px;
+        }
+    }
+
+    .btn-connect {
+        padding: 12px 32px 10px 32px;
+        border-radius: 16px;
+        background: $black-color;
+        color: $white-color;
+    }
+
+    .btn-connect:hover {
+        @extend %transition-hovers;
+    }
+
+    .img-wrapper {
+        @extend %flex-spb;
+        gap: 8px;
+
+        .img-tik {
+            background-image: url('../img/image\ 1\ header.svg');
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 40px;
+            height: 40px;
+        }
+
+        .img-vk {
+            background-image: url('../img/image\ 2\ header.svg');
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 40px;
+            height: 40px;
+        }
+
+        .img-tg {
+            background-image: url('../img/image\ 3\ header.svg');
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 40px;
+            height: 40px;
+        }
+    }
+}
+
+main {
+    position: relative;
+
+    .preview {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 0px 0px 32px 32px;
+        background: #FFF;
+
+        .info-page {
+            text-align: center;
+            position: absolute;
+            left: 15%;
+
+            h1 {
+                color: $black-color;
+                font: 700 96px Neue Machina;
+            }
+
+            p {
+                color: $black-color;
+                font: 500 20px Raleway;
+                padding: 20px 16%;
+            }
+
+            .btn-start {
+                border-radius: 16px;
+                background: $black-color;
+                padding: 12px 32px;
+                color: $white-color;
+                font: 500 20px Raleway;
+                margin: 0 37%;
+            }
+
+            .btn-start:hover {
+                @extend %transition-hovers;
+            }
+        }
+
+        .img-questions {
+            background-image: url('../img/Group\ 6.svg');
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 395px;
+            height: 363px;
+            border-radius: 0px 0px 32px 32px;
+
+            &:not(:last-child) {
+                transform: scaleX(-1);
+            }
+        }
+    }
+
+    .emoji {
+        margin-top: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 25px;
+
+        .wrapper {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background-color: $white-color;
+            padding: 8px 16px;
+            border-radius: 100px;
+
+            .emoji-one {
+                background-image: url('../img/emoji/😋.svg');
+                background-repeat: no-repeat;
+                background-size: contain;
+                width: 32px;
+                height: 32px;
+            }
+
+            .emoji-two {
+                background-image: url('../img/emoji/😎.svg');
+                background-repeat: no-repeat;
+                background-size: contain;
+                width: 32px;
+                height: 32px;
+            }
+
+            .emoji-three {
+                background-image: url('../img/emoji/😍.svg');
+                background-repeat: no-repeat;
+                background-size: contain;
+                width: 32px;
+                height: 32px;
+            }
+
+            .emoji-four {
+                background-image: url('../img/emoji/🤩.svg');
+                background-repeat: no-repeat;
+                background-size: contain;
+                width: 32px;
+                height: 32px;
+            }
+
+            .emoji-five {
+                background-image: url('../img/emoji/😍.svg');
+                background-repeat: no-repeat;
+                background-size: contain;
+                width: 32px;
+                height: 32px;
+            }
+        }
+    }
+
+    .swiper {
+        text-align: center;
+        margin: 80px auto;
+
+        .swiper-wrapper {
+            max-width: max-content;
+            box-sizing: content-box;
+        }
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            background-color: $white-color;
+            width: 100px;
+            height: 100px;
+            border-radius: 20%;
+        }
+
+        .swiper-button-next::after,
+        .swiper-button-prev::after {
+            font-size: 50px;
+            color: $black-color;
+        }
+    }
+
+}
+
+footer {
+    border-radius: 32px 32px 0px 0px;
+    background: $black-color;
+    @extend %flex-spb;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 48px;
+
+
+    .wrapper {
+        .contacts {
+            display: flex;
+            gap: 48px;
+
+            p {
+                color: $white-color;
+                font: 500 20px Raleway;
+            }
+
+            h1 {
+                color: $white-color;
+                font: 700 48px Neue Machina;
+                text-decoration-line: underline;
+            }
+        }
+    }
+
+
+    nav {
+        @extend %flex-spb;
+        gap: 5px;
+        margin-top: 15px;
+
+        .img-tik {
+            background-image: url('../img/image\ 1\ footer.svg');
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 341px;
+            height: 71px;
+        }
+
+        .img-vk {
+            background-image: url('../img/image\ 2\ footer.svg');
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 341px;
+            height: 71px;
+        }
+
+        .img-tg {
+            background-image: url('../img/image\ 3\ footer.svg');
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 341px;
+            height: 71px;
+        }
+    }
+
+    .logo {
+        h1 {
+            color: $white-color;
+            font: 700 36px Neue Machina;
+            position: relative;
+            top: 60px;
+        }
+    }
+}
