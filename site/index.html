@@ -16,10 +16,30 @@
         <h1>Super Quiz</h1>
 
         <nav>
-            <p>Главная</p>
-            <p>Квиз</p>
-            <p>Отзывы</p>
-            <p>Не главная</p>
+            <a href="#">
+                <p>Главная</p>
+            </a>
+            <a href="#">
+                <p>Квиз</p>
+            </a>
+            <a href="#">
+                <p>Отзывы</p>
+            </a>
+            <a href="#">
+                <p class="drop-menu">Не главная</p>
+                
+                <div class="dropdown">
+
+                    <ul>
+                        <li>Подпункт</li>
+                        <li>Еще подпункт</li>
+                        <li>И еще подпункт</li>
+                    </ul>
+
+                </div>
+            </a>
+
+
         </nav>
 
         <div class="btn-connect">Связаться с нами</div>
@@ -79,9 +99,109 @@
         </div>
 
         <section class="content">
-            <div class="sidebar"></div>
-            
-            <div class="side"></div>
+            <div class="sidebar">
+
+                <div class="question-one">
+                    <p>Какие виды тестов вам нравятся?</p>
+                    <p>Кто я из вселенной Марвел, На словарный запас</p>
+                </div>
+
+                <div class="question-two">
+                    <p>Вы любите проходить тесты?</p>
+                    <p>Да, я прохожу все тесты</p>
+                </div>
+
+                <div class="question-three">
+                    <p>Спасибо за ответы!</p>
+                    <p>Заполните форму ниже</p>
+                </div>
+
+            </div>
+
+            <div class="main-card">
+                <h1>Какие виды тестов вам нравятся?</h1>
+                <p>Многие из нас хоть раз попадались на эту удочку — хочешь пройти всего один тест из интернета, и вдруг
+                    понимаешь, что пролетело полдня.</p>
+
+                <form class="inp">
+                    <label>
+                        <span class="custom"></span>
+                        <input type="checkbox" class="real-checkbox" value="one"> На темперамент
+                    </label>
+
+                    <label>
+                        <span class="custom"></span>
+                        <input type="checkbox" class="real-checkbox" value="two"> Кто я из вселенной Марвел
+                    </label>
+
+                    <label>
+                        <span class="custom"></span>
+                        <input type="checkbox" class="real-checkbox" value="three"> Увидел это
+                    </label>
+
+                    <label>
+                        <span class="custom"></span>
+                        <input type="checkbox" class="real-checkbox" value="four"> Мое тотемное животное
+                    </label>
+
+                    <label>
+                        <span class="custom"></span>
+                        <input type="checkbox" class="real-checkbox" value="five"> На IQ
+                    </label>
+
+                    <label>
+                        <span class="custom"></span>
+                        <input type="checkbox" class="real-checkbox" value="six"> На словарный запас
+                    </label>
+
+                    <label>
+                        <span class="custom"></span>
+                        <input type="checkbox" class="real-checkbox" value="seven"> На логическое мышление
+                    </label>
+
+                    <label>
+                        <span class="custom"></span>
+                        <input type="checkbox" class="real-checkbox" value="eight"> На уровень интеллекта
+                    </label>
+                </form>
+
+                <div class="btn-continue">Продолжить</div>
+            </div>
+
+            <div class="second-card">
+                <h1>Вы любите проходить тесты?</h1>
+                <p>Нам важно узнать насолько часто Вы проходите тесты.</p>
+
+                <form class="inp">
+                    <label>
+                        <input type="radio" class="real-checkbox" name="group-one" value="one"> Нет, я не никогда не
+                        прохожу тесты
+                    </label>
+
+                    <label>
+                        <input type="radio" class="real-checkbox" name="group-one" value="two"> Да, я прохожу все тесты
+                    </label>
+
+                    <label>
+                        <input type="radio" class="real-checkbox" name="group-one" value="three"> Заставляю себя
+                        проходить тесты
+                    </label>
+
+                    <label>
+                        <input type="radio" class="real-checkbox" name="group-one" value="four"> Не люблю проходить
+                        тесты, но иногда приходится
+                    </label>
+                </form>
+
+                <div class="wrapper-btn">
+                    <div class="btn-back">Назад</div>
+                    <div class="btn-continue">Продолжить</div>
+                </div>
+            </div>
+
+            <div class="last-card">
+
+            </div>
         </section>
 
         <section class="swiper">
