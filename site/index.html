@@ -27,7 +27,7 @@
             </a>
             <a href="#">
                 <p class="drop-menu">Не главная</p>
-                
+
                 <div class="dropdown">
 
                     <ul>
@@ -38,11 +38,10 @@
 
                 </div>
             </a>
-
-
         </nav>
 
         <div class="btn-connect">Связаться с нами</div>
+
         <div class="img-wrapper">
             <a href="https://www.tiktok.com/">
                 <div class="img-tik"></div>
@@ -97,6 +96,38 @@
                 <p>Круто</p>
             </div>
         </div>
+
+        <section class="popup-bg">
+            <form class="popup">
+
+                <div class="btn-close-popup">
+                    <div class="img"></div>
+                </div>
+
+                <h1>Заполните контактные данные</h1>
+                <p>Пройди квиз, и будешь счастлив. Этот квиз предназначен для тех людей, которые любят проходить тесты!
+                </p>
+
+                <div class="inp-data">
+                    <label><input type="text" placeholder="Ваше имя"> </label>
+                    <label><input type="text" placeholder="Фамилия"> </label>
+                    <label><input type="text" placeholder="Ваш комментарий"> </label>
+                </div>
+
+                <p>Этот квиз предназначен для тех людей, которые любят проходить тесты!</p>
+
+                <div class="inp-radio">
+                    <label><input type="radio" name="group-two" value="one">Не знаю</label>
+                    <label><input type="radio" name="group-two" value="two">Увидел это</label>
+                    <label><input type="radio" name="group-two" value="three">Вон то</label>
+                    <label><input type="radio" name="group-two" value="four">Вон то</label>
+                    <label><input type="radio" name="group-two" value="five">Увидел это</label>
+                    <label><input type="radio" name="group-two" value="six">Не знаю</label>
+                </div>
+
+                <button type="submit">Продолжить</button>
+            </form>
+        </section>
 
         <section class="content">
             <div class="sidebar">
@@ -200,7 +231,20 @@
             </div>
 
             <div class="last-card">
+                <div class="emoji-img"></div>
 
+                <h1>Спасибо за ответы! Заполните форму ниже</h1>
+                <p>Ваше мнение важно для нас. Прикрепите фото с Вашей любимой картинкой и оставьте комментарий насколько
+                    понравился Вам тест.</p>
+
+                <label>
+                    <input type="text" name="text" class="name" placeholder="Ваше мнение сюда">
+                </label>
+
+                <div class="wrapper-btn">
+                    <div class="btn-back">Назад</div>
+                    <div class="btn-continue">Продолжить</div>
+                </div>
             </div>
         </section>
 
@@ -278,6 +322,8 @@
 
     <script src="./assets/libs/swiper/swiper-bundle.min.js"></script>
     <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/app.question.js"></script>
+    <script src="./assets/js/app.popup.js"></script>
 
 </body>
 
